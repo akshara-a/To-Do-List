@@ -84,8 +84,8 @@
         border: none;
         font-size: 20px;
     }
-    /* ----- Placeholder ----- */
-    /* General plaholder */
+    /* ----- Placeholders ----- */
+    /* General placeholders */
     ::placeholder {
         font-size: 20px;
         color: rgb(17, 17, 34);
