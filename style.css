@@ -1,6 +1,11 @@
+/* GLOBAL CSS */
+*{
+    font-family: 'Comforter', cursive;
+}
+
+/* CUSTOM CSS *.    
 @media only screen and (min-width: 320px) {
     body{
-        font-family: 'Comforter', cursive;
         background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
@@ -34,13 +39,11 @@
         border: none;
         background-color: #fff9e2;
         box-shadow: -1px -1px 5px #c9bc8a;
-        font-family: 'Comforter', cursive;
         font-size: 20px;
         color: rgb(17, 17, 34);
         border-radius: 0px 30px 30px 0px;
     }
     input[type=text]{
-        font-family: 'Comforter', cursive;
         font-size: 20px;
     }
     #toDo:focus-visible{
@@ -84,19 +87,16 @@
     /* ----- Placeholder ----- */
     /* General plaholder */
     ::placeholder {
-        font-family: 'Comforter', cursive;
         font-size: 20px;
         color: rgb(17, 17, 34);
     }
     /* Edge placeholders */
     ::-webkit-input-placeholder {
-        font-family: 'Comforter', cursive;
         font-size: 20px;
         color: rgb(17, 17, 34);
     }
     /* Internet explorer placeholders */
     :-ms-input-placeholder {
-        font-family: 'Comforter', cursive;
         font-size: 20px;
         color: rgb(17, 17, 34);
     }
