@@ -37,4 +37,6 @@ function addFunction(){
             divTarget.style.display = "none";
         }
     }
+    // Resetting the value of the input text to empty
+    document.getElementById("toDo").value = "";
 }
