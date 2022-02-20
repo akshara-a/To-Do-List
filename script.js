@@ -1,17 +1,15 @@
 // Adding items in To-Do list
 function addFunction(){
-    var lengthOfInputText = document.getElementById("toDo").value.length;
-    if(lengthofInputText == 0)
+    if(document.getElementById("toDo").value.length == 0)
         alert("Please do enter the task to proceed!");
     else{
         // Parent Shell creation
         var parentShell = document.createElement("div");
         parentShell.className = "individualItems";
-        // Value part
         document.getElementById("items").appendChild(parentShell);
-        var itemVal = document.getElementById("toDo").value;
+        // Value part
         var addItem = document.createElement("p");
-        addItem.innerHTML = itemVal;
+        addItem.innerHTML = document.getElementById("toDo").value;
         addItem.className = "itemVal";
         parentShell.appendChild(addItem);
         // Striking tasks 
