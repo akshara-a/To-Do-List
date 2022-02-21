@@ -1,7 +1,9 @@
 // Adding items in To-Do list
 function addFunction(){
-    if(document.getElementById("toDo").value.length == 0)
+    // If the length of the input text is zero, then JS displays an alert box
+    if(document.getElementById("toDo").value.length <= 0)
         alert("Please do enter the task to proceed!");
+    // When the length of the input text is greater than zero, then JS executes the below statements
     else{
         // Parent Shell creation
         var parentShell = document.createElement("div");
@@ -20,6 +22,7 @@ function addFunction(){
         parentShell.appendChild(strikeButton);
         for(var i=0; i<strike.length; i++){
             strike[i].onclick = function(){
+                // Targeting the previous sibling element
                 this.previousElementSibling.style.textDecoration = "line-through";
             }
         }
@@ -38,6 +41,7 @@ function addFunction(){
         var close = document.getElementsByClassName("delButton");
         for(var k=0; k<close.length; k++){
             close[k].onclick = function(){
+                // Targeting the parent element
                 this.parentElement.style.display = "none";
             }
         }
