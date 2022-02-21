@@ -18,10 +18,16 @@ function addFunction(){
         strikeButton.className = "strikeButton";
         var strike = document.getElementsByClassName("strikeButton");
         parentShell.appendChild(strikeButton);
-        var j;
-        for(j=0;j<strike.length;j++){
-            strike[j].onclick = function(){
+        for(var i=0; i<strike.length; i++){
+            strike[i].onclick = function(){
                 this.previousElementSibling.style.textDecoration = "line-through";
+            }
+        }
+        // Un-striking tasks 
+        var unStrike = document.getElementsByClassName("itemVal");
+        for(var j=0; j<unStrike.length; j++){
+            unStrike[j].onclick = function(){
+                this.style.textDecoration = "none";
             }
         }
         // Closing button part
@@ -30,9 +36,8 @@ function addFunction(){
         addCloseButton.className = "delButton";
         parentShell.appendChild(addCloseButton);
         var close = document.getElementsByClassName("delButton");
-        var i;
-        for(i=0;i<close.length;i++){
-            close[i].onclick = function(){
+        for(var k=0; k<close.length; k++){
+            close[k].onclick = function(){
                 this.parentElement.style.display = "none";
             }
         }
