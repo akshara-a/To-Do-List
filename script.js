@@ -21,9 +21,7 @@ function addFunction(){
         var j;
         for(j=0;j<strike.length;j++){
             strike[j].onclick = function(){
-                var parTarget = this.parentElement;
-                var childTarget = parTarget.children[0];
-                childTarget.style.textDecoration = "line-through";
+                this.previousElementSibling.style.textDecoration = "line-through";
             }
         }
         // Closing button part
@@ -35,8 +33,7 @@ function addFunction(){
         var i;
         for(i=0;i<close.length;i++){
             close[i].onclick = function(){
-                var divTarget = this.parentElement;
-                divTarget.style.display = "none";
+                this.parentElement.style.display = "none";
             }
         }
         // Resetting the value of the input text to empty
