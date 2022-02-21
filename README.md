@@ -3,7 +3,7 @@ To-Do List
 Features-  
 ✔ Creating tasks list   
 ✔ Deleting tasks  
-✔ Striking tasks   
+✔ Striking tasks     
 ✔ Removing strike throughs 
 ✔ Responsiveness   
 ✔ Interactive User Interface   
